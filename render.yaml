@@ -1,0 +1,24 @@
+services:
+  - type: worker
+    name: otomoto-monitor
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python script.py
+    envVars:
+      - key: EMAIL_SENDER
+        value: your-email@gmail.com
+      - key: EMAIL_PASSWORD
+        value: your-email-password
+      - key: EMAIL_RECEIVER
+        value: recipient@gmail.com
+      - key: DISCORD_WEBHOOK_URL
+        value: https://discord.com/api/webhooks/xxx/yyy
+      - key: TWILIO_ACCOUNT_SID
+        value: your-twilio-sid
+      - key: TWILIO_AUTH_TOKEN
+        value: your-twilio-token
+      - key: TWILIO_PHONE_FROM
+        value: +48123456789
+      - key: TWILIO_PHONE_TO
+        value: +48987654321
