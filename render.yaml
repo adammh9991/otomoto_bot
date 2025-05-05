@@ -13,7 +13,7 @@ services:
       - key: EMAIL_RECEIVER
         value: recipient@gmail.com
       - key: DISCORD_WEBHOOK_URL
-        value: https://discord.com/api/webhooks/xxx/yyy
+        value: https://discord.com/api/webhooks/1368870728015024230/kJRFTLoRHh_yNuTNpPNOiP8O4GAjqJXE6WdljEB0DlK-od6seqStdcwFi9jjk19J3645
       - key: TWILIO_ACCOUNT_SID
         value: your-twilio-sid
       - key: TWILIO_AUTH_TOKEN
